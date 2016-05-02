@@ -3,13 +3,23 @@
 ##Table of Contents
 * [Description](#description)
 * [Interface Design](#design)
-* [Technical Design](#technical-design)
+* [Accounts](#accounts)
+* [About](#about)
+* [Chapters](#chapters)
+* [Events](#events)
+* [Community](#community)
+* [Resources](#resources)
+* [Profile](#profile)
+* [TODO](#todo)
 
 #Description
-
 This is the source code of the [Get Your Hair Wet website](http://getyourhairwet.net) which will now be refered to as the site.
 
 #Design
+###Wireframe
+[Wireframe](https://docs.google.com/presentation/d/1Nzin20_Po3kQ131UeRfnf6yuyJdUHwQHw17cuwMW-6U/edit?usp=sharing) on Google Slides
+
+#Accounts
 There are two parts to the website, the user facing content, and the 
 administrator/editor interface. The administrator/editor interface runs a CMS (content management system). The CMS allows editors to easily create new pages in the website. There are 2 types of pages that 
 editors can create. The first type is the article page, an article page has a title, description, and a body. The body of the article is a richtext box 
@@ -23,7 +33,53 @@ this information, the site will send an email to the user with a link to allow t
 create profiles for someone that didn't want one. Users can also register a chapter. A chapter is a small group of girls that can set up events for 
 their chapter.
 
-#Technical Design
+###Technical overview
 The site uses the [django](https://docs.djangoproject.com/en/1.9/) framework. The CMS is [wagtail](http://wagtail.readthedocs.org/en/v1.4.3/)
 When a user creates a chapter, the chapter is tied to that user, so one the database, there is a foreign key called chapter_owner_id that points to the id 
 of the currently logged in user. There is a similar mechanism for events, except that events have a foreign key towards a chapter.
+
+#About
+(Design overview here)
+
+###Technical overview
+(Technical overview here)
+
+#Chapters
+(Design overview here)
+
+###Technical overview
+(Technical overview here)
+
+#Events
+(Design overview here)
+
+###Technical overview
+(Technical overview here)
+
+#Community
+The site has basic message board functionality under a tab called Community. This was designed to provide smart girls users with a place to share ideas online and ask questions in a safe and positive environment. In the design phase of this project, posts had the ability to be 'starred' to promote the post to the top of the message board. We decided to hide this feature in order to prevent posts from enabling popularity contests among users. Instead, this star functionality will 'favorite' the post for the user only. The number of stars a post has received may also influence the ranking of posts on the back-end only. Currently, users are able to create posts, search for keywords within posts, and filter posts by clicking on tags.
+
+###Technical overview
+The post is implemented using a Django ModelForm and may be found in ForumView called Thread. It may be beneficial to extend a Wagtail article for easier indexing, searching, and moderation by admins. Code is found in 'forum' folder. 
+
+#Resources
+
+#Profile
+The site will have a simple profile page with the following features:
+* Edit personal information
+* Add profile picture
+* See active chapters
+* Set reminders for events attending
+* View past events
+
+#TODO
+###Community
+* Restrict message board to logged-in users
+* Restrict message board by chapter
+* Implement reply for posts
+* Use foreign key to associate posts and replies with users
+* Make messages clickable
+* Save 'starred' posts for users and display them as filter
+
+###Profile
+* Need to implement
