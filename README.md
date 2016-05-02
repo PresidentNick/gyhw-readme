@@ -61,7 +61,7 @@ Events belong to chapters.
 ###Community
 The site has basic message board functionality under a tab called Community. This was designed to provide smart girls users with a place to share ideas online and ask questions in a safe and positive environment. In the design phase of this project, posts had the ability to be 'starred' to promote the post to the top of the message board. We decided to hide this feature in order to prevent posts from enabling popularity contests among users. Instead, this star functionality will 'favorite' the post for the user only. The number of stars a post has received may also influence the ranking of posts on the back-end only. Currently, users are able to create posts, search for keywords within posts, and filter posts by clicking on tags.
 
-###Technical overview
+####Technical overview
 The post is implemented using a Django ModelForm and may be found in ForumView called Thread. It may be beneficial to extend a Wagtail article for easier indexing, searching, and moderation by admins. Code is found in 'forum' folder. 
 
 ###Resources
