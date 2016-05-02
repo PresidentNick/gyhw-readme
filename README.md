@@ -54,10 +54,10 @@ Chapters are groups of girls who have similar interests/motives. Chapters are su
 To create a chapter, a person must be registered as a user. 
 
 ###Events
-Events belong to chapters.
+Events are used by chapters to hold chapter meetings or to attend a function such as a volunteering event.
 
 ###Events Technical Overview
-(Technical overview here)
+Events belong to chapters in the database schema.
 
 ###Community
 The site has basic message board functionality under a tab called Community. This was designed to provide smart girls users with a place to share ideas online and ask questions in a safe and positive environment. In the design phase of this project, posts had the ability to be 'starred' to promote the post to the top of the message board. We decided to hide this feature in order to prevent posts from enabling popularity contests among users. Instead, this star functionality will 'favorite' the post for the user only. The number of stars a post has received may also influence the ranking of posts on the back-end only. Currently, users are able to create posts, search for keywords within posts, and filter posts by clicking on tags.
@@ -66,7 +66,10 @@ The site has basic message board functionality under a tab called Community. Thi
 The post is implemented using a Django ModelForm and may be found in ForumView called Thread. It may be beneficial to extend a Wagtail article for easier indexing, searching, and moderation by admins. Code is found in 'forum' folder. 
 
 ###Resources
-(Resources overview here)
+Resources are used to give girls tools to learn. An example of resources include tool kits that Smart Girls provides that range from "how to change a tire" to "how to adopt a pet".
+
+###Resources Technical Overview
+(Resources technical overview here)
 
 ###Profile
 The site will have a simple profile page with the following features:
