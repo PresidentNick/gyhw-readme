@@ -13,7 +13,7 @@
 * [TODO](#todo)
 
 #Introduction
-This is the source code of the [Get Your Hair Wet website](http://getyourhairwet.net) which will now be refered to as the site.
+The purpose of this report is to provide information as to why getyourhairwet.net was created, how it should be utilized, how it was created, and what needs to be done to complete the site. This is the source code of the [Get Your Hair Wet website](http://getyourhairwet.net) which will now be refered to as the site.
 
 #Background
 Amy Poehler’s Smart Girls is headed by Amy Poehler, Meredith Walker, and Amy Miles. Smart Girls’ mission is to encourage girls to break the mold of typical stereotypes, do things that people tell them they can’t, and show the world the tenacity that they have. The organization wants to empower young girls. 
