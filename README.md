@@ -23,10 +23,12 @@ The Get Your Hair Wet website is a tool to support the organization’s cause. T
 #Design
 [Wireframe](https://docs.google.com/presentation/d/1Nzin20_Po3kQ131UeRfnf6yuyJdUHwQHw17cuwMW-6U/edit?usp=sharing) on Google Slides
 
-#Technical Overview
 The site uses the [django](https://docs.djangoproject.com/en/1.9/) framework. The content management system (CMS) is [wagtail](http://wagtail.readthedocs.org/en/v1.4.3/)
 When a user creates a chapter, the chapter is tied to that user, so one the database, there is a foreign key called chapter_owner_id that points to the id 
 of the currently logged in user. There is a similar mechanism for events, except that events have a foreign key towards a chapter.
+
+#Overview
+This section describes each portion of the site in detail.
 
 ###Accounts
 There are two parts to the website, the user facing content, and the 
