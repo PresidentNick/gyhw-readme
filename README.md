@@ -53,13 +53,13 @@ of the currently logged in user. There is a similar mechanism for events, except
 (Technical overview here)
 
 #Chapters
-(Design overview here)
+To create a chapter, a person must be registered as a user. 
 
 ###Technical overview
 (Technical overview here)
 
 #Events
-(Design overview here)
+Events belong to chapters.
 
 ###Technical overview
 (Technical overview here)
