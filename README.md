@@ -46,10 +46,10 @@ their chapter.
 (Design overview here)
 
 ###Chapters
-To create a chapter, a person must be registered as a user. 
+Chapters are groups of girls who have similar interests/motives. Chapters are supposed to provide a community for girls to interact, learn, and grow from and with. Chapters are meant to be a group of at least three girls. The group meets at a location of their discretion.
 
 ###Chapters Technical Overview
-(Technical overview here)
+To create a chapter, a person must be registered as a user. 
 
 ###Events
 Events belong to chapters.
