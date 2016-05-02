@@ -20,7 +20,7 @@ Amy Poehler’s Smart Girls is headed by Amy Poehler, Meredith Walker, and Amy M
 
 The Get Your Hair Wet website is a tool to support the organization’s cause. The site provides the ability to create groups called “chapters” to build community and give girls with similar interests and motives a platform to communicate, share ideas, and act on their interests.
 
-#Design
+#Technical Design
 [Wireframe](https://docs.google.com/presentation/d/1Nzin20_Po3kQ131UeRfnf6yuyJdUHwQHw17cuwMW-6U/edit?usp=sharing) on Google Slides
 
 The site uses the [django](https://docs.djangoproject.com/en/1.9/) framework. The content management system (CMS) is [wagtail](http://wagtail.readthedocs.org/en/v1.4.3/)
