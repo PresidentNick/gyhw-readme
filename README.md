@@ -74,7 +74,7 @@ The site will have a simple profile page with the following features:
 * Set reminders for events attending
 * View past events
 
-#TODO
+#Recommendations and TODO
 ###Community
 * Restrict message board to logged-in users
 * Restrict message board by chapter
@@ -85,3 +85,6 @@ The site will have a simple profile page with the following features:
 
 ###Profile
 * Need to implement
+
+#Conclusion
+We hope the site will provide Get Your Hair Wet the platform to empower girls worldwide. The site offers an abundance of resources to help the organization with its laudable mission. 
