@@ -66,10 +66,14 @@ The site has basic message board functionality under a tab called Community. Thi
 The post is implemented using a Django ModelForm and may be found in ForumView called Thread. It may be beneficial to extend a Wagtail article for easier indexing, searching, and moderation by admins. Code is found in 'forum' folder. 
 
 ###Resources
-Resources are used to give girls tools to learn. An example of resources include tool kits that Smart Girls provides that range from "how to change a tire" to "how to adopt a pet".
+Resources are used to give girls tools to learn. An example of resources include tool kits that Smart Girls provides that range from "how to change a tire" to "how to adopt a pet". Resources are essentially articles that staff can create.
+To create one, you must log in with a staff account (admin, moderator, or editor) and go to the resources tab. Then you
+click on the bird on the bottom right of the page and click on "Add a child page" this will take you to the admin interface
+where you can create and article by providing a title, intro, and body.
 
 ###Resources Technical Overview
-(Resources technical overview here)
+Resources were implemented as Article objects in the backend. An Article is an extension of a wagtail Page. This way it can
+be easily indexed. Besides the Page fields, Articles have a date, which is automatically written whenever an Article is created or modified, an intro (250 length character field), and a body (a wagtail richtext field).
 
 ###Profile
 The site will have a simple profile page with the following features:
