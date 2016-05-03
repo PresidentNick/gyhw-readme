@@ -48,16 +48,16 @@ their chapter.
 (Design overview here)
 
 ###Chapters
-Chapters are groups of girls who have similar interests/motives. Chapters are supposed to provide a community for girls to interact, learn, and grow from and with. Chapters are meant to be a group of at least three girls. The group meets at a location of their discretion.
+Chapters are groups of girls who have similar interests or missions. Chapters are supposed to provide a community for girls to interact, learn, and grow from and with. In order to form a Chapter a user must visit the "create" tab under Chapters. The Chapter must have at least three members in order to be created. Chapters must also have a title, description, neighborhood, city, state, list of users who are members, whether or not the chapter has been approved, a private latitude and longitude used for putting the Chapter on the map on "Find Chapters", list of users who are admins, a list of chapter events, and an optional image. Users are also able to find chapters via a map or keyword searches.
 
 ###Chapters Technical Overview
-To create a chapter, a person must be registered as a user. 
+To create a chapter, a person must be registered as a user. A user must also specify at least two other registered users in order to create the chapter, however this has not been enforced yet in our implementation. When an chapter is created an entry is created in the database following the Chapter model(chapters/models.py) which includes the fields listed in the non-technical description. The Chapters front-end includes a Google map with the lat, longs of the events as markers. It also includes an HTML form for searching through the events as well as a scrollable list of Chapters. Currently users are able to click on a Chapter and the map will center on the location. Users can also hover over the markers on the map and the corresponding event will be highlighted. One problem (which is also true for events) is that the markers are currently at the exact lat, longs. We would like them to be small circles so to protect the privacy of the users. Something similar to what we want can be found on Airbnb's website when looking at the map for a property. This should be possible using Google maps API. Currently not implemented (also true for events), we would like to be able to allow a user to click on the "Join" button and which would be sent to the Chapter admins for approval. The HTML and Javascript can be found in chapters/templates/chapters and the CSS can be found in chapters/static/css.
 
 ###Events
-Events are used by chapters to hold chapter meetings or to attend a function such as a volunteering event.
+Events are created by members chapters to hold chapter meetings or to attend a function such as a volunteering event. Events have a title, public location (such as zipcode - seen by anybody), private location (the actual address - seen by users who RSVP), owning chapter, start date and time, end date and time, description, list of users who are attending, list of admins (users who can edit the event), whether or not the event has been approved, a private latitude and longitude used for putting the Chapter on the map on "Find Events", and an optional image. Users are also able to find events via a map or keyword searches.
 
 ###Events Technical Overview
-Events belong to chapters in the database schema.
+To create an event, a user must be logged in and part of a chapter. When a user creates and event, they must choose a chapter for the event to belong to. When an event is created via the form on the "Create" tab under events, an entry is created in the database following the Event model(events/models.py) which includes the fields listed in the non-technical description. Also note that you can access the chapter, but it does not show up in the event model because it is a ManyToMany field in chapters/models.py. Currently the lat, long has the same issue with the Google map as noted in the Chapters Technical Overview. On the front-end Events are set up almost exactly the same way as Chapters. There is a Google map on the right and on the left there is a search form and a list of cards containing each event detail and a join button. The HTML and Javascript can be found in events/templates/events/ and the CSS can be found in events/static/css.
 
 ###Community
 The site has basic message board functionality under a tab called Community. This was designed to provide smart girls users with a place to share ideas online and ask questions in a safe and positive environment. In the design phase of this project, posts had the ability to be 'starred' to promote the post to the top of the message board. We decided to hide this feature in order to prevent posts from enabling popularity contests among users. Instead, this star functionality will 'favorite' the post for the user only. The number of stars a post has received may also influence the ranking of posts on the back-end only. Currently, users are able to create posts, search for keywords within posts, and filter posts by clicking on tags.
@@ -87,6 +87,10 @@ The site will have a simple profile page with the following features:
 * Use foreign key to associate posts and replies with users
 * Make messages clickable
 * Save 'starred' posts for users and display them as filter
+* The ability to 'report' a user, Event, Chapter, or message
+* Implement the need for three users to create a Chapter
+* Add optional images to Events and Chapters
+* "Join" button sends message to Chapter/Event admins for approval for Chapters and Events
 
 ###Profile
 * Need to implement
