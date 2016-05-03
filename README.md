@@ -45,7 +45,7 @@ create profiles for someone that didn't want one. Users can also register a chap
 their chapter.
 
 ###About
-(Design overview here)
+The about page can be edited in the admin section.
 
 ###Chapters
 Chapters are groups of girls who have similar interests or missions. Chapters are supposed to provide a community for girls to interact, learn, and grow from and with. In order to form a Chapter a user must visit the "create" tab under Chapters. The Chapter must have at least three members in order to be created. Chapters must also have a title, description, neighborhood, city, state, list of users who are members, whether or not the chapter has been approved, a private latitude and longitude used for putting the Chapter on the map on "Find Chapters", list of users who are admins, a list of chapter events, and an optional image. Users are also able to find chapters via a map or keyword searches.
